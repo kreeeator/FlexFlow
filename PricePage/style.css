@@ -1,0 +1,120 @@
+.price {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.price-text {
+  text-align: center;
+  padding: var(--spacing-4xl) 0 var(--spacing-base) 0;
+  max-width: 444px;
+  margin: 0 auto;
+}
+
+.price-text h2 {
+  margin-bottom: 8px;
+  font-size: var(--text-3xl);
+  font-weight: var(--font-medium);
+  line-height: var(--line-height-3xl);
+  color: var(--color-text-dark);
+}
+
+.price-text p {
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--spacing-base);
+  line-height: var(--line-height-base);
+  color: var(--color-secondary);
+}
+
+.price-text .button {
+  margin: 0 auto;
+}
+
+/* services */
+.services {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.services-list {
+  display: flex;
+  gap: var(--spacing-base);
+}
+
+.services-card {
+  box-shadow: 0px 9px 20px 2px rgba(215, 215, 215, 1);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-sm);
+  flex: 1;
+}
+.services-card:nth-child(2) {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.services-card:nth-child(3) {
+  background-color: var(--color-text-dark);
+  color: var(--color-white);
+}
+
+.services-card_name {
+  font-weight: var(--font-medium);
+  font-size: var(--text-lg);
+  line-height: var(--line-height-lg);
+  margin-bottom: var(--spacing-base);
+}
+
+.services-card_price {
+  font-weight: var(--font-medium);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--spacing-base);
+}
+
+.services-card_text {
+  font-size: var(--text-base);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--spacing-lg);
+  max-width: 278px;
+}
+
+.small-text {
+  font-size: var(--text-base);
+  font-weight: 400;
+}
+
+.services-card_line {
+  margin-bottom: var(--spacing-lg);
+}
+
+.services-card_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-card_list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-base);
+}
+.services-card_list li svg {
+  flex-shrink: 0;
+  margin-right: var(--spacing-sm);
+}
+
+@media (max-width: 890px) {
+  .price-text {
+    margin: 0 auto;
+    max-width: 361px;
+  }
+  .price-text h2 {
+    font-size: var(--text-2xl);
+    line-height: var(--line-height-2xl);
+  }
+  .price-text p {
+    font-size: var(--text-base);
+    line-height: var(--line-height-base);
+  }
+  .services-list {
+    flex-direction: column;
+  }
+  .services-card {
+    margin: 0 auto;
+    max-width: 361px;
+  }
+}
